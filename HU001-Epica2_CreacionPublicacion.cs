@@ -1,0 +1,34 @@
+using System;
+
+namespace SistemaReciclaje
+{
+    public class HU001_CreacionPublicacion
+    {
+        public int IdPublicacion { get; set; }
+        public string NombreMaterial { get; set; }
+        public string FacultadOrigen { get; set; }
+        public int Cantidad { get; set; }
+        public string EstadoRecurso { get; set; }
+        public DateTime FechaPublicacion { get; set; }
+
+        public HU001_CreacionPublicacion(int id, string material, string facultad, int cantidad, string estado)
+        {
+            IdPublicacion = id;
+            NombreMaterial = material;
+            FacultadOrigen = facultad;
+            Cantidad = cantidad;
+            EstadoRecurso = estado;
+            FechaPublicacion = DateTime.Now;
+        }
+
+        public void MostrarDetalles()
+        {
+            Console.WriteLine($"=== Publicación Registrada ===");
+            Console.WriteLine($"Material: {NombreMaterial}");
+            Console.WriteLine($"Facultad: {FacultadOrigen}");
+            Console.WriteLine($"Cantidad disponible: {Cantidad}");
+            Console.WriteLine($"Estado: {EstadoRecurso}");
+            // Cambio de rama.
+        }
+    }
+}
