@@ -28,6 +28,7 @@ namespace SistemaReciclaje
             Console.WriteLine($"Facultad: {FacultadOrigen}");
             Console.WriteLine($"Cantidad disponible: {Cantidad}");
             Console.WriteLine($"Estado: {EstadoRecurso}");
+            // Cambio de rama.
         }
     }
 }
